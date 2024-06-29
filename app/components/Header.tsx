@@ -18,7 +18,7 @@ interface HeaderProps {
   profiles: Profile[];
 }
 
-const Header: React.FC<HeaderProps> = ({ name, label, image, email, phone, url, profiles }) => (
+const Header: React.FC<HeaderProps> = ({ name, label, image, email, phone, url }) => (
   <header className='flex flex-col items-start p-4 bg-gray-100 rounded-lg shadow-md'>
     <div className="mb-4">
       <img 
