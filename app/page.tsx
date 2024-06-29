@@ -5,11 +5,12 @@ import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import skillsData from '../data/skills.json'; // Assuming you have a local JSON file for skills
+import Footer from './components/Footer';
+import skillsData from '../data/skills.json';
 
 interface Props {
-  data: any; // Define a proper type based on your JSON structure
-  skillsDetails: any[]; // Define a proper type based on your skills JSON structure
+  data: any;
+  skillsDetails: any[]; 
 }
 
 const Home: React.FC<Props> = async () => {
@@ -25,6 +26,7 @@ const Home: React.FC<Props> = async () => {
          <Education education={data.education} />
          <Skills skills={data.skills} skillsDetails={skillsData} />
          <Projects projects={data.projects}/>
+         <Footer languages={data.languages} interests={data.interests} certificates={data.certificates} />
       </div>
     </div>
   );
