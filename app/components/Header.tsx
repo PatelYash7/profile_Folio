@@ -1,3 +1,4 @@
+import { Url } from 'next/dist/shared/lib/router/router';
 import React from 'react';
 import {FaEnvelope, FaMobile } from 'react-icons/fa';
 
@@ -10,7 +11,7 @@ interface Profile {
 interface HeaderProps {
   name: string;
   label: string;
-  image: string;
+  image: Url;
   email: string;
   phone: string;
   url: string;
